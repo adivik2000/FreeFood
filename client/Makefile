@@ -10,8 +10,11 @@ all:
 uim:
 #	gmcs2 -pkg:glade-sharp-2.0 -resource:src/ui/cartao.glade src/card.cs /out:build/card.exe 
 #	gmcs2 -pkg:glade-sharp-2.0 /res:src/ui/cartao.glade /res:src/ui/gtk-orientation-portrait.svg src/card.cs /out:build/card.exe 
+	mkdir -p build/etc
 	gmcs2 -pkg:glade-sharp-2.0 src/ui-mockup/*.cs /out:build/ui-mockup.exe 
 	cp -fr src//ui-mockup/ui/ build/
+uimt:
+	cd build; ./ui-mockup.exe
 
 clean:
 	rm -fr build/*.exe build/*.dll

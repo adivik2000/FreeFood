@@ -65,10 +65,10 @@ namespace FreeFood.Client.WindowType
 		public void RGChangedEvent( object o, EventArgs e)
 		{
 			Console.WriteLine(entRG.Text);
-			if((string) entRG.Text == "2089000-2")
+			if((string) entRG.Text == "8000500-6")
 			{
 				entName.Text = "Fernando Michelotti";
-				entFone.Text = "9906-6924";
+				entFone.Text = "9901-1155";
 				entEmail.Text = "artista@frustrado.com.br";
 				entBirthday.Text = "02/11/1977";
 				imgClientPicture.Pixbuf = new Gdk.Pixbuf ("ui/artista_frustrado.png"); 

@@ -24,6 +24,9 @@ public class GladeApp
 	ToolButton tbtBar; 
 
 	[Glade.Widget]
+	ToolButton tbtKitchen; 
+
+	[Glade.Widget]
 	TreeView tvMain;	
 	
 	[Glade.Widget]
@@ -53,6 +56,7 @@ public class GladeApp
 		tbtComanda.Clicked += OnTbtComandaPressButtonEvent;
 		tbtCheckout.Clicked += OnTbtCheckoutPressButtonEvent; 
 		tbtBar.Clicked += OnTbtBarPressButtonEvent; 
+		tbtKitchen.Clicked += OnTbtKitchenPressButtonEvent; 
 		Application.Run();
 	}
 	
@@ -99,6 +103,14 @@ public class GladeApp
 		BarWindow cw = new BarWindow();
 		this.ChangeMainLabel(cw.Title);
 		this.ChangeEveChild(cw.vbBar);
+	}
+
+	public void OnTbtKitchenPressButtonEvent( object o, EventArgs e)
+	{
+		Console.WriteLine("TbtKitchen");	
+		KitchenWindow cw = new KitchenWindow();
+		this.ChangeMainLabel(cw.Title);
+		this.ChangeEveChild(cw.vbKitchen);
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)

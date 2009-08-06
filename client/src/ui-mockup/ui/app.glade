@@ -392,7 +392,7 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="GtkToolButton" id="tbKitchen">
+                      <widget class="GtkToolButton" id="tbtKitchen">
                         <property name="visible">True</property>
                         <property name="label" translatable="yes">Kitchen</property>
                         <property name="use_underline">True</property>
